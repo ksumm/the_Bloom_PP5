@@ -57,6 +57,10 @@ body {
     text-align: center;
 }
 
+.bg-banner {
+    background: #ac8e6e !important;
+}
+
 .border-black {
     border: 1px solid;
 }
