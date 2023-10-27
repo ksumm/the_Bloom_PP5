@@ -1,7 +1,7 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#">New Arrivals</a>
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'products' %}?category=new_arrivals">New Arrivals</a>
         </li>
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -17,27 +17,27 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="seasonal-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Seasonal
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Winter</a>
-                <a href="" class="dropdown-item">Spring</a>
-                <a href="" class="dropdown-item">Summer</a>
-                <a href="" class="dropdown-item">Autumn</a>
+            <div class="dropdown-menu border-0" aria-labelledby="seasonal-link">
+                <a href="{% url 'products' %}?category=winter" class="dropdown-item">Winter</a>
+                <a href="{% url 'products' %}?category=spring" class="dropdown-item">Spring</a>
+                <a href="{% url 'products' %}?category=summer" class="dropdown-item">Summer</a>
+                <a href="{% url 'products' %}?category=autumn" class="dropdown-item">Autumn</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="homeware-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="holidays-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Holidays &amp; Events
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Birthday</a>
-                <a href="" class="dropdown-item">Wedding</a>
-                <a href="" class="dropdown-item">Christmas</a>
-                <a href="" class="dropdown-item">Halloween</a>
-                <a href="" class="dropdown-item">Easter</a>
+            <div class="dropdown-menu border-0" aria-labelledby="holidays-link">
+                <a href="{% url 'products' %}?category=birthday" class="dropdown-item">Birthday</a>
+                <a href="{% url 'products' %}?category=wedding" class="dropdown-item">Wedding</a>
+                <a href="{% url 'products' %}?category=christmas" class="dropdown-item">Christmas</a>
+                <a href="{% url 'products' %}?category=halloween" class="dropdown-item">Halloween</a>
+                <a href="{% url 'products' %}?category=easter" class="dropdown-item">Easter</a>
             </div>
         </li>
 
@@ -46,9 +46,9 @@
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">Free Shipping</a>
-                <a href="" class="dropdown-item">Clearance</a>
-                <a href="" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?category=free_shipping" class="dropdown-item">Free Shipping</a>
+                <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
+                <a href="{% url 'products' %}?category=clearance,free_shipping" class="dropdown-item">All Specials</a>
             </div>
         </li>
     </ul>
