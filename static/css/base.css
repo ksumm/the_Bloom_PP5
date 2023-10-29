@@ -35,7 +35,7 @@ body {
 }
 
 .btn-black {
-    background: black;
+    background: #ac8e6e;
     color: white;
 }
 
@@ -96,6 +96,20 @@ a.category-badge > span.badge:hover {
 .btt-link {
     cursor: pointer;
 }
+
+.btn-outline-black {
+    background: white;
+    color: #ac8e6e !important; /* use important to override link colors for <a> elements */
+    border: 1px solid #ac8e6e;
+}
+
+.btn-outline-black:hover,
+.btn-outline-black:active,
+.btn-outline-black:focus {
+    background: #ac8e6e;
+    color: white !important;
+}
+
 
 
 /* -------------------------------- Media Queries */
