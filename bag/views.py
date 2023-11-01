@@ -12,13 +12,12 @@ def view_bag(request):
 def add_to_bag(request, item_id):
     """ Add a quantity of the specified product to the shopping bag """
 
-    product = Product.objects.get(pk=item_id)
+    product = get_object_or_404(Product, pk=item_id)
     quantity = 1
     redirect_url = request.POST.get('redirect_url')
     bag = request.session.get('bag', {})
 
     bag[item_id] = quantity
-
     messages.success(request, f'{product.name} added to your bag')
 
     request.session['bag'] = bag
@@ -30,14 +29,18 @@ def adjust_bag(request, item_id):
 
     quantity = int(request.POST.get('quantity'))
     bag = request.session.get('bag', {})
+    product = get_object_or_404(Product, pk=item_id)
 
     if quantity > 0:
         bag[item_id] = quantity
+        messages.success(request, f' Updated {product.name} quantity to {bag[item_id]}')
     else:
         bag.pop(item_id)
+        messages.success(request, f'{product.name} removed from your bag')
 
     request.session['bag'] = bag
     return redirect(reverse('view_bag'))
+    
 
 
 def remove_from_bag(request, item_id):
