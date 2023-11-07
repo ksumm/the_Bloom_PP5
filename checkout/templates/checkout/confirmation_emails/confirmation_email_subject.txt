@@ -1,0 +1,1 @@
+Bloom Art shop order confirmation letter for your order number {{ order.order_number }}
