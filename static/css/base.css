@@ -267,6 +267,13 @@ input[name='q']::placeholder {
     border-radius: 4;
 }
 
+/* Footer */
+
+.social-icon {
+    height: 1.5rem;
+    margin: 1rem;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
