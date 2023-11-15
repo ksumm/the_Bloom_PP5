@@ -286,6 +286,16 @@ input[name='q']::placeholder {
     margin: 1rem;
 }
 
+.btn-footer {
+    background: #5b635b;
+    color: white;
+}
+
+.btn-footer:hover {
+    background: white;
+    color: #5b635b;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
