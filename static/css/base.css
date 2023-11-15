@@ -10,6 +10,18 @@ body {
     font-family: 'Lato';
 }
 
+.overlay-thank-you {
+    background: url('/media/thank-you.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 164px);
+    height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	z-index: -1;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;

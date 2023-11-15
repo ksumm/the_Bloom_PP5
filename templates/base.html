@@ -150,8 +150,8 @@
     {% endblock %}
     
 
-    <footer class="text-center text-lg-start bg-white mt-xl-5 pt-4">
-    <div class="container p-4">
+    <footer class="container-fluid text-center text-lg-start bg-banner mt-xl-5 pt-4">
+    <div class=" p-4">
       <div class="row">
         <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
             <h6 class="text-uppercase mb-4 text-black">The Bloom Art</h6>
@@ -176,8 +176,11 @@
                 </ul>
         </div>
         <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-            <h6 class="text-uppercase mb-4 text-black">Contact Us</h6>
+            <h6 class="text-uppercase mb-4 text-black">Our Contacts</h6>
                 <ul class="list-unstyled">
+                    <li>
+                        <a href="{% url 'contact' %}" class="text-black">Contact Us</a>
+                    </li>
                     <li>
                         <a href="#!" class="text-black">Facebook</a>
                     </li>
