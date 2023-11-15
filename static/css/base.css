@@ -19,12 +19,12 @@ body {
     width: 1.5rem;
 }
 
-.logo-font {
-    text-transform: uppercase;
+.btn {
+    color:#6c757d;
 }
 
-.main-logo-link {
-    width: fit-content;
+.logo-font {
+    text-transform: uppercase;
 }
 
 .shop-now-button {
