@@ -8,4 +8,7 @@ def index(request):
 
 def delivery(request):
     """ A view to return the index page and products"""
-    return render(request, "home/delivery.html")    
+    return render(request, "home/delivery.html")
+
+def about_us(request):
+    return render(request, 'home/about_us.html')      

@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="overlay-thank-you"></div>
+    <div class="container h-100">
+        <div class="row">
+            <div class="col text-center mt-3">
+                <br>
+                <h2 class="logo-font">About The Bloom Art</h2>
+                <hr class="w-50 mb-3">
+                <br>
+                <h3 class="lead mt-4" style="font-size: 22px;">Welcome to The Bloom Art!</h3>
+                <br>
+                <p class="text-muted mt-3" style="font-size: 16px;">At The Bloom Art, we are passionate about bringing art into your life. Our shop offers a curated collection of beautiful watercolor prints, each carefully crafted to add a touch of creativity to your space.</p>
+                
+                <p class="text-muted mt-3">In addition to our art prints, we also provide art classes for enthusiasts of all skill levels. Whether you're a beginner or an experienced artist, our classes are designed to inspire and nurture your artistic journey.</p>
+                <p class="text-muted mt-3">Explore our online shop, discover captivating watercolor prints, and embark on a creative adventure with our art classes. Thank you for choosing The Bloom Art as your destination for art and inspiration!</p>
+            </div>
+        </div>
+        <div class="row my-5 text-center">
+            <div class="col">
+                <div class="button-container">
+                    <a href="{% url 'products' %}" class="btn btn-black rounded-4 text-uppercase mt-5">Explore Our Shop</a>
+                    <a href="{% url 'artclass:art_class_list' %}" class="btn btn-black rounded-4 text-uppercase mt-5">Explore Our Art Classes</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
