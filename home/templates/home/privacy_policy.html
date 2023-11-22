@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <br>
+                <hr>
+                <h2 class="logo-font text-center mb-4">Privacy Policy</h2>
+                <hr>
+                <br>
+                <p class="text-justify">
+                    Welcome to The Bloom Art's Privacy Policy. Your privacy is important to us. This Privacy Policy
+                    explains how we collect, use, disclose, and safeguard your information when you visit our website.
+                </p>
+
+                <h4 class="text-center">Information We Collect</h4>
+                <p>
+                    We collect personal information that you provide directly to us, such as your name, email address,
+                    and other contact details when you register for an account or make a purchase.
+                </p>
+
+                <h4 class="text-center">How We Use Your Information</h4>
+                <p>
+                    We use the information we collect to provide, maintain, and improve our services, process
+                    transactions, send order confirmations, and communicate with you about our products and promotions.
+                </p>
+
+                <h4 class="text-center">Information Sharing</h4>
+                <p>
+                    We do not sell, trade, or otherwise transfer your personal information to third parties without your consent.
+                    However, we may share information with trusted service providers who assist us in operating our website,
+                    conducting our business, or servicing you, as long as those parties agree to keep this information confidential.
+                </p>
+
+                <h4 class="text-center">Security</h4>
+                <p>
+                    We implement a variety of security measures to maintain the safety of your personal information.
+                    We use industry-standard encryption techniques to protect your data during transmission.
+                </p>
+
+                <br>
+                <br>
+                <div class="text-center">
+                    <p>If you have any questions or concerns about our Privacy Policy, please contact us:</p>
+                    <a href="{% url 'contact' %}" class="btn btn-black rounded-4 text-center text-uppercase mt-2 mb-4">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

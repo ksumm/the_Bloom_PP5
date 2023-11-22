@@ -15,4 +15,10 @@ def about_us(request):
 
 def returns(request):
     """ A view to return the returns page"""
-    return render(request, "home/returns.html")         
+    return render(request, "home/returns.html")
+
+def privacy_policy(request):
+    """ A view to return the privacy_policy page"""
+    return render(request, "home/privacy_policy.html")    
+
+        
