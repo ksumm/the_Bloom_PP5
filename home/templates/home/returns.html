@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <hr class="my-4">
+            <h2 class="logo-font text-center mb-4">Returns and Exchanges</h2>
+            <hr class="my-4">
+            
+            <div class="mb-4">
+                <h3 class="logo-font text-black text-center mb-3">Our Commitment</h3>
+                <br>
+                <p class="text-center mb-4">
+                    At The Bloom Art, we are committed to ensuring your satisfaction with every purchase.
+                    If you are not completely satisfied with your order, we offer a hassle-free return and exchange process.
+                </p>
+            </div>
+            <br>
+            <div class="mb-4">
+                <h3 class="logo-font text-black text-center mb-4">Return Policy</h3>
+                <ul class="list-unstyled text-center">
+                    <li>Returns and exchanges are accepted within 30 days of receiving your order</li>
+                    <li>Items must be in their original condition and packaging</li>
+                    <li>Refunds and exchanges will be issued once the returned items are received and inspected</li>
+                </ul>
+            </div>
+
+            <div class="text-center mb-4">
+                <br>
+                <br>
+                <p>If you have any questions or need assistance, please feel free to contact us: </p>
+                <a href="{% url 'contact' %}" class="btn btn-black rounded-4 text-center text-uppercase mt-2 mb-4">Contact Us</a> 
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
