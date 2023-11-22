@@ -1,11 +1,30 @@
 {% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
 
 {% block content %}
-    <h1>Book Art Class: {{ artclass.title }}</h1>
+    <div class="overlay"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <br>
+                <h2 class="logo-font text-center mt-3 mb-4">Book Art Class: {{ artclass.title }}</h2>
+                <hr>
+                <br>
+            </div>
+        </div>
 
-    <form method="post" action="">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <input type="submit" value="Book Now">
-    </form>
+        <form action="" method="post" class="col-lg-6 offset-lg-3">
+            {% csrf_token %}
+            {{ form|crispy }}
+            <input type="submit" class="btn btn-black rounded-4 text-center text-uppercase mb-4" value="Book Now">
+        </form>
+    </div>
 {% endblock %}

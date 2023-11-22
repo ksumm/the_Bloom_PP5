@@ -1,7 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
 
-
 {% block page_header %}
     <div class="container header-container">
         <div class="row">
@@ -11,25 +10,43 @@
 {% endblock %}
 
 {% block content %}
-<div class="overlay"></div>
-    <div class="container-fluid">
-        <h1>{{ art_class.title }}</h1>
-        
-        <p>{{ art_class.description }}</p>
-        <p>Date: {{ art_class.date }}</p>
-        <p>Time: {{ art_class.time }}</p>
-
-        {% if art_class.is_booked %}
-            <p>Status: Booked</p>
-        {% else %}
-            <p>Status: Available</p>
-            <a href="{% url 'artclass:book_art_class' art_class.id %}">Book Now</a>
-        {% endif %}
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row justify-content-center mt-3">
+            <div class="col text-center">
+                <br>
+                <h2 class="logo-font">{{ art_class.title }}</h2>
+                <hr class="w-50 mb-1">
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="image-container my-5">
+                    {% if art_class.image %}
+                        <a href="{{ art_class.image.url }}" target="_blank">
+                            <img class="card-img-top img-fluid" src="{{ art_class.image.url }}" alt="{{ art_class.title }}">
+                        </a>
+                    {% else %}
+                        <a href="">
+                            <img class="card-img-top img-fluid" src="{% static 'noimage.png' %}" alt="{{ art_class.title }}">
+                        </a>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="product-details-container mb-5 mt-md-5">
+                    <p class="mb-0">{{ art_class.title }}</p>
+                    <p class="lead mb-0 text-left font-weight-bold">Date: {{ art_class.date }}</p>
+                    <p class="lead mb-0 text-left font-weight-bold">Time: {{ art_class.time }}</p>
+                    <p class="mt-3">{{ art_class.description }}</p>
+                    {% if art_class.is_booked %}
+                        <p>Status: Booked</p>
+                    {% else %}
+                        <p>Status: Available</p>
+                        <a href="{% url 'artclass:book_art_class' art_class.id %}" class="btn btn-black rounded-4 text-uppercase mt-3">Book Now</a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
     </div>
-    
-        <input type="submit" class="btn btn-black rounded-4 text-center text-uppercase mb-4" value="Submit">
-      
-</div>     
-
 {% endblock %}
-

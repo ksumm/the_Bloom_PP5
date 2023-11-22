@@ -28,10 +28,15 @@ def book_art_class(request, art_class_id):
         form = ArtClassBookingForm(request.POST)
         if form.is_valid():
             # Create a Booking object
-            booking = Booking.objects.create(art_class=art_class)
+            booking = form.save(commit=False)
+            booking.art_class = art_class
+            booking.user = request.user  # Set the user to the logged-in user
+            booking.save()
+
             # Mark the art class as booked
             art_class.is_booked = True
             art_class.save()
+
             return HttpResponseRedirect('/success/')
     else:
         form = ArtClassBookingForm()
