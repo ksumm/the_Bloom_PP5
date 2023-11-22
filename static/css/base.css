@@ -10,6 +10,17 @@ body {
     font-family: 'Lato';
 }
 
+.overlay {
+	height: calc(100vh - 164px);
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: white;
+	z-index: -1;
+}
+
+
 .overlay-thank-you {
     background: url('/media/thank-you.jpeg') no-repeat center center fixed;
     background-size: cover;
@@ -83,15 +94,6 @@ body {
     color: #a02015 !important; 
 }
 
-.overlay {
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	position: fixed;
-	background: white;
-	z-index: -1;
-}
 
 a.category-badge > span.badge:hover {
     background: #ac8e6e !important;

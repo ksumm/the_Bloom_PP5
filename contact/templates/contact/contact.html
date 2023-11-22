@@ -21,9 +21,8 @@
             <br>
         </div>
     </div>
-   
 
-    <form action="" method="post" class="list-inline-item col-lg-12">
+    <form action="" method="post" class="col-lg-6 offset-lg-3">
         {% csrf_token %}
         {{ form|crispy }}
         <input type="submit" class="btn btn-black rounded-4 text-center text-uppercase mb-4" value="Submit">
