@@ -1,7 +1,9 @@
 from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponseRedirect
+from django.urls import reverse
 from .models import ArtClass, Booking
 from .forms import ArtClassBookingForm
+
 
 
 def art_class_list(request):
@@ -37,8 +39,12 @@ def book_art_class(request, art_class_id):
             art_class.is_booked = True
             art_class.save()
 
-            return HttpResponseRedirect('/success/')
+            return HttpResponseRedirect(reverse('artclass:success_view'))  # Use the correct URL name with reverse
     else:
         form = ArtClassBookingForm()
 
     return render(request, 'artclass/book_art_class.html', {'art_class': art_class, 'form': form})
+
+
+def success_view(request):
+    return render(request, 'artclass/success.html')
