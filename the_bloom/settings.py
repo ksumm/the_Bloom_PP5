@@ -30,9 +30,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-ksumm-thebloompp5-8mfgsff0z1v.ws-eu105.gitpod.io', '8000-ksumm-thebloompp5-8mfgsff0z1v.ws-eu106.gitpod.io', 'https://the-bloom-art-3c20c7ea337d.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['8000-ksumm-thebloompp5-8mfgsff0z1v.ws-eu105.gitpod.io', '8000-ksumm-thebloompp5-8mfgsff0z1v.ws-eu106.gitpod.io', 'the-bloom-art-3c20c7ea337d.herokuapp.com', 'localhost',]
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-ksumm-thebloompp5-8mfgsff0z1v.ws-eu105.gitpod.io', 'https://8000-ksumm-thebloompp5-8mfgsff0z1v.ws-eu106.gitpod.io']
+CSRF_TRUSTED_ORIGINS = ['https://8000-ksumm-thebloompp5-8mfgsff0z1v.ws-eu105.gitpod.io', 'https://8000-ksumm-thebloompp5-8mfgsff0z1v.ws-eu106.gitpod.io', 'the-bloom-art-3c20c7ea337d.herokuapp.com',]
 
 
 # Application definition
