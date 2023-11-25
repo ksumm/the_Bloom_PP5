@@ -6,6 +6,8 @@ from .models import UserProfile
 from .forms import UserProfileForm
 
 from checkout.models import Order
+from django.shortcuts import redirect
+
 
 @login_required
 def profile(request):
@@ -46,4 +48,14 @@ def order_history(request, order_number):
         'from_profile': True,
     }
 
-    return render(request, template, context)    
+    return render(request, template, context)
+
+@login_required
+def delete_profile(request):
+    if request.method == 'POST':
+        profile = request.user.userprofile
+        profile.delete_profile()
+        messages.success(request, 'Profile deleted successfully')
+        return redirect('home')
+    else:
+        return render(request, 'profiles/delete_profile.html')      
