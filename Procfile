@@ -1,1 +1,1 @@
-web: gunicorn the_bloom.wsgi:application
+web: gunicorn the_bloom.wsgi
