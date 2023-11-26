@@ -354,13 +354,13 @@ input[name='q']::placeholder {
         font-size: .9rem;
     }
 
-    .btn.btn-outline-black.rounded-0,
-    .btn.btn-black.rounded-0 {
+    .btn.btn-outline-black.rounded-4,
+    .btn.btn-black.rounded-4 {
         padding: .375rem .375rem;
     }
 
-    .btn.btn-outline-black.rounded-0.btn-lg,
-    .btn.btn-black.rounded-0.btn-lg {
+    .btn.btn-outline-black.rounded-4.btn-lg,
+    .btn.btn-black.rounded-4.btn-lg {
         padding: .375rem .375rem;
         font-size: .75rem;
     }
@@ -373,5 +373,13 @@ input[name='q']::placeholder {
         min-width: 100px;
         padding: .375rem .375rem !important;
     }
+
+    .decrement-qty,
+    .increment-qty,
+    .update-link {
+        display: none;
+        }
+
+        
 }
  
