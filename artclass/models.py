@@ -29,7 +29,4 @@ class Booking(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return f"{self.name} booked {self.art_class.title}"        
-
-
-
+        return f"{self.name} booked {self.art_class.title}"
