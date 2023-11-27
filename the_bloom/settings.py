@@ -16,7 +16,7 @@ import dj_database_url
 
 if os.path.isfile('env.py'):
     import env
-    
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
@@ -31,9 +31,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-ksumm-thebloompp5-8mfgsff0z1v.ws-eu105.gitpod.io', '8000-ksumm-thebloompp5-8mfgsff0z1v.ws-eu106.gitpod.io', 'the-bloom-art-3c20c7ea337d.herokuapp.com', 'localhost',]
+ALLOWED_HOSTS = ['8000-ksumm-thebloompp5-8mfgsff0z1v.ws-eu105.gitpod.io', '8000-ksumm-thebloompp5-8mfgsff0z1v.ws-eu106.gitpod.io', 'the-bloom-art-3c20c7ea337d.herokuapp.com', 'localhost',] # noqa
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-ksumm-thebloompp5-8mfgsff0z1v.ws-eu105.gitpod.io', 'https://8000-ksumm-thebloompp5-8mfgsff0z1v.ws-eu106.gitpod.io', 'https://the-bloom-art-3c20c7ea337d.herokuapp.com',]
+CSRF_TRUSTED_ORIGINS = ['https://8000-ksumm-thebloompp5-8mfgsff0z1v.ws-eu105.gitpod.io', 'https://8000-ksumm-thebloompp5-8mfgsff0z1v.ws-eu106.gitpod.io', 'https://the-bloom-art-3c20c7ea337d.herokuapp.com',] # noqa
 
 
 # Application definition
@@ -92,13 +92,13 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request', #required by allauth
+                'django.template.context_processors.request', #required by allauth # noqa
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
                 'bag.contexts.bag_contents',
             ],
-             'builtins': [
+            'builtins': [
                 'crispy_forms.templatetags.crispy_forms_tags',
                 'crispy_forms.templatetags.crispy_forms_field',
             ]
@@ -149,23 +149,21 @@ DATABASES = {
 }
 
 
-
-
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator', # noqa
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator', # noqa
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator', # noqa
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator', # noqa
     },
 ]
 
@@ -188,7 +186,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
+STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage' # noqa
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'),]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 

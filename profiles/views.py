@@ -20,7 +20,7 @@ def profile(request):
             form.save()
             messages.success(request, 'Profile updated successfully')
         else:
-            messages.error(request, 'Update profile failed. Please ensure the form is valid.')    
+            messages.error(request, 'Update profile failed. Please ensure the form is valid.')   # noqa
     else:
         form = UserProfileForm(instance=profile)
     orders = profile.orders.all()
@@ -33,6 +33,7 @@ def profile(request):
     }
 
     return render(request, template, context)
+
 
 def order_history(request, order_number):
     order = get_object_or_404(Order, order_number=order_number)
@@ -50,6 +51,7 @@ def order_history(request, order_number):
 
     return render(request, template, context)
 
+
 @login_required
 def delete_profile(request):
     if request.method == 'POST':
@@ -58,4 +60,4 @@ def delete_profile(request):
         messages.success(request, 'Profile deleted successfully')
         return redirect('home')
     else:
-        return render(request, 'profiles/delete_profile.html')      
+        return render(request, 'profiles/delete_profile.html')

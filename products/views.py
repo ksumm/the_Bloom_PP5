@@ -7,6 +7,7 @@ from django.db.models.functions import Lower
 from .models import Product, Category
 from .forms import ProductForm
 
+
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
 
@@ -25,7 +26,7 @@ def all_products(request):
                 products = products.annotate(lower_name=Lower('name'))
 
             if sortkey == 'category':
-                sortkey = 'category__name'    
+                sortkey = 'category__name'
 
             if 'direction' in request.GET:
                 direction = request.GET['direction']
@@ -41,10 +42,10 @@ def all_products(request):
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
-                messages.error(request, "You didn't enter any search criteria!")
+                messages.error(request, "You didn't enter any search criteria!") # noqa
                 return redirect(reverse('products'))
             
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
+            queries = Q(name__icontains=query) | Q(description__icontains=query) # noqa
             products = products.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
@@ -70,6 +71,7 @@ def product_detail(request, product_id):
 
     return render(request, 'products/product_detail.html', context)
 
+
 @login_required
 def add_product(request):
     """ Add a product to the store """
@@ -81,19 +83,20 @@ def add_product(request):
         form = ProductForm(request.POST, request.FILES)
         if form.is_valid():
             product = form.save()
-            messages.info(request, f'The {product.name} product was added successfully!')
+            messages.info(request, f'The {product.name} product was added successfully!') # noqa
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to add product. Please ensure the form is valid.')
+            messages.error(request, 'Failed to add product. Please ensure the form is valid.') # noqa
     else:
         form = ProductForm()
-        
+      
     template = 'products/add_product.html'
     context = {
         'form': form,
     }
 
     return render(request, template, context)
+
 
 @login_required
 def edit_product(request, product_id):
@@ -107,10 +110,10 @@ def edit_product(request, product_id):
         form = ProductForm(request.POST, request.FILES, instance=product)
         if form.is_valid():
             form.save()
-            messages.info(request, f'The {product.name} product was updated successfully!')
+            messages.info(request, f'The {product.name} product was updated successfully!') # noqa
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to update product. Please ensure the form is valid.')
+            messages.error(request, 'Failed to update product. Please ensure the form is valid.') # noqa
     else:
         form = ProductForm(instance=product)
 
@@ -122,14 +125,15 @@ def edit_product(request, product_id):
 
     return render(request, template, context)
 
+
 @login_required
 def delete_product(request, product_id):
     """ Delete a product from the store """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, this option is for Store Owners only')
         return redirect(reverse('home'))
-        
+       
     product = get_object_or_404(Product, pk=product_id)
     product.delete()
-    messages.info(request, f'The {product.name} product was deleted successfully')
-    return redirect(reverse('products'))    
+    messages.info(request, f'The {product.name} product was deleted successfully') # noqa
+    return redirect(reverse('products'))
