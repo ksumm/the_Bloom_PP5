@@ -22,7 +22,7 @@ body {
 
 
 .overlay-thank-you {
-    background: url('static/images/thank-you.jpeg') no-repeat center center fixed;
+    background: url('https://res.cloudinary.com/dfxzhqoqi/image/upload/v1701010519/media/thank-you.jpeg.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     height: 100%;
