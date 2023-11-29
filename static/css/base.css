@@ -299,6 +299,17 @@ input[name='q']::placeholder {
     color: #5b635b;
 }
 
+/* Mailchimp*/
+#mc_embed_signup {
+    background:#ac8e6e; 
+    clear:left; 
+    font-family: 'Lato';
+    font-size:14px; 
+    color: #000;
+    width: 300px;
+    text-transform: uppercase;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
