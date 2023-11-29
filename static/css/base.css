@@ -20,7 +20,6 @@ body {
 	z-index: -1;
 }
 
-
 .overlay-thank-you {
     background: url('https://res.cloudinary.com/dfxzhqoqi/image/upload/v1701010519/media/thank-you.jpeg.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -33,6 +32,11 @@ body {
 	z-index: -1;
 }
 
+/* Home Page */
+
+.welcome-message h2{
+    text-transform: uppercase !important;
+}
 
 /* from Bulma */
 .icon {
@@ -49,6 +53,12 @@ body {
 
 .logo-font {
     text-transform: uppercase;
+}
+
+.logo-font-new {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: #a02015;
 }
 
 .shop-now-button {
@@ -344,8 +354,16 @@ input[name='q']::placeholder {
         height: calc(100vh - 116px);
     }
 
-    .display-4.logo-font.text-black {
+    .display-4.logo-font.logo-font.text-black {
         font-size: 2rem;
+    }
+
+    .logo-font-new {
+        font-size: 1.5rem;
+        background-color: #fffcf5;
+        color: #a02015;
+        opacity: 90%;
+        padding: 2%;
     }
 
     .nav-link {
