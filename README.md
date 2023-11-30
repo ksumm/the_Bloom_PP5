@@ -46,8 +46,38 @@ In a nutshell, we're here to make your world more vibrant with art and help you 
 
 
 
-### **UX Design Process**
+### **Design**
 <br/>
+
+### **Wireframes**
+
+<details>
+<summary>Index</summary>
+
+![Index Wireframe](docs/index.png)
+
+<details>
+<summary>Products</summary>
+
+![Products Wireframe](docs/products.png)
+
+<details>
+<summary>Product Details</summary>
+
+![Product Details Wireframe](docs/details.png)
+
+<details>
+<summary>Art Classes</summary>
+
+![Art Classes Wireframe](docs/artclasses.png)
+
+
+<details>
+<summary>Contact Us</summary>
+
+![Contact Us Wireframe](docs/contact.png)
+
+
 
 The UX design for the Bloom Art E-commerce project followed a systematic process to ensure a user-friendly and visually appealing platform. Below are the key stages of the design journey.
 
