@@ -1,52 +1,66 @@
-#  The Bloom Art E-commerce Platform 🎨
+<div style="background-color: #F7F7F7; color: black;">
+ 
+# **The Bloom Art**
 
 Welcome to The Bloom Art, a vibrant and user-friendly e-commerce platform specializing in watercolor prints. This project is developed as a part of the Full Stack Development course at Code Institute. 
 
-
-## 🔗 [View the live project here.](https://the-bloom-art-3c20c7ea337d.herokuapp.com/)
+ [View the live project here](https://the-bloom-art-3c20c7ea337d.herokuapp.com/)
 ![](docs/mockup.png)
 
 ---
+<br/>
 
-## CONTENTS
+## **Table of Contents**
 
-* [User Experience](#user-experience-ux)
-  * [Project Goals](#project-goals)
-  * [User Stories](#user-stories)
+1. [User Experience](#user-experience)
+3. [Design](#design)
+5. [Features](#features)
+6. [Accessibility](#accessibility)
+7. [Technologies Used](#technologies-used)
+8. [Deployment and Local Development](#deployment-and-local-development)
+9. [Testing](#testing)
+10. [Credits](#credits)
 
-* [Design](#design)
-  * [Colour Scheme](#colour-scheme)
-  * [Typography](#typography)
-  * [Wireframes](#wireframes)
-  * [Database Schema](#database-schema) 
-
-* [Agile Development Process](#agile-development-process)
-
-* [Features](#features)
-
-* [Technologies Used](#technologies-used)
-  * [Languages Used](#languages-used)
-  * [Frameworks, Libraries & Programs Used](#frameworks-libraries--programs-used)
-
-* [Testing](#testing)
-
-* [Deployment & Local Development](#deployment--local-development)
-  * [Remote Deployment](#remote-deployment)
-  * [Local Deployment](#local-deployment)
-    * [How to Fork](#how-to-fork)
-    * [How to Clone](#how-to-clone)
-    * [Using Gitpod](#using-gitpod)
-
-* [Credits](#credits)
-  * [Acknowledgments](#acknowledgments)
+---
+<br/>
     
+## **User Experience**
+<br/>
 
-### Colour Scheme
+### **Purpose:**
+
+Bloom Art E-commerce is all about bringing art to life in two beautiful ways:
+
+**1. Discover & Decorate:**
+
+Find and bring home stunning watercolor art prints that add a touch of beauty to your space. It's a haven for art lovers and home decor enthusiasts.
+
+**2. Grow Your Artistry:**
+
+Dive into our online art classes to nurture your artistic side. Bloom Art is not just a store; it's a space for you to bloom as an artist and make your personal spaces uniquely yours.
+    
+In a nutshell, we're here to make your world more vibrant with art and help you discover the artist within.
+
+
+### **User Stories**
+
+
+
+### **UX Design Process**
+<br/>
+
+The UX design for the Bloom Art E-commerce project followed a systematic process to ensure a user-friendly and visually appealing platform. Below are the key stages of the design journey.
+
+### **Wireframes**
+
+The wireframes are mostly adapted versions of the Boutique Ado walkthrough. 
+
+### **Colour Scheme**
 
 The colour scheme was choosen using the [Imagecolorpicker](https://imagecolorpicker.com) 
 ![Color scheme](docs/color-palette.png)
 
-### The main colors used:
+**The main colors used:**
 
 - #ac8e6e;
 - #a02015;
@@ -54,7 +68,7 @@ The colour scheme was choosen using the [Imagecolorpicker](https://imagecolorpic
 - white;
 - black;
 
-### Typography
+**Typography**
 
 Google Fonts was used to select and import the fonts on this project:
 * [Roboto](https://fonts.google.com/specimen/Roboto) 
@@ -124,14 +138,14 @@ The site was deployed to Heroku. The steps to deploy are as follows:
   6. Enter the name of the repository that you forked, search and connect.
   7. Select the branch and click Deploy Branch.
 
-The live link can be found here - [The Bloom Art](https://the-bloom-art-3c20c7ea337d.herokuapp.com)
+The live link can be found here - [https://github.com/ksumm/the_Bloom_PP5](https://the-bloom-art-3c20c7ea337d.herokuapp.com)
 
 ### Local Deployment
 
 #### How to Fork
 
   1. Log In or Sign Up to GitHub.
-  2. Go to this project repository https://github.com/ksumm/star-readers-django-pp4
+  2. Go to this project repository [https://github.com/ksumm/the_Bloom_PP5](https://github.com/ksumm/the_Bloom_PP5)
   2. On the top right of the page, there's a button with the option Fork. Click on it.
   3. A new page, "Create a new fork", will open. If you wish, you can edit the name.
   4. At the end of the page, click on "Create fork".
