@@ -25,7 +25,7 @@ Welcome to The Bloom Art, a vibrant and user-friendly e-commerce platform specia
 <br/>
     
 ## **User Experience**
-<br/>
+
 
 ### **Purpose:**
 
@@ -44,46 +44,64 @@ In a nutshell, we're here to make your world more vibrant with art and help you 
 
 ### **User Stories**
 
+The Agile Methodology was used to plan this project. This was implemented through Github and the Project Board, which can be seen here -  <a href="https://github.com/users/ksumm/projects/8"> The Bloom Art </a>
 
+<br>
+
+|  N  | Content                                                                                                                                                   |  
+| --- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | As a **site user** I want to use the Navigation Bar, so that I can navigate through the website pages                                                     |                   
+| 2   | As a **site user** I want to visit and interact with the Home site page, so that I can understand the purpose of the site easily                          |
+| 3   | As a **site user** I want to see all the products on a site page, so that I can select some to purchase                                                   |
+| 4   | As a **site user** I want to see the Product detail page, so that I can make purchase easily                                                              |                                                                     
+| 5   | As a **site user** I want to sort a products by specific category, so that I can quickly choose product that I need                                       |
+| 6   | As a **site user** I can use the search form to search for a product, so that I can quickly find products that I am interested in                         |
+| 7   | As a **site user** I want to add a product to a shopping bag, so that the product is added                                                                |
+| 8   | As a **site user** I want to choose and change the quantity of the selected product, so that the correct quantity is added to the shopping bag            |
+| 9   | As a **site user** I want to receive a confirmation email after checkout, so that I am sure that my order is completed successfully                       |
+| 10  | As a **site user** I want to access My Profile, so that I can see my profile info and my orders history                                                   |
+| 11  | As a **site user** I want to be able to complete the checkout process for my shopping cart so that I can pay for the order                                |
+| 12  | As a **site user** I want to remove products from my shopping bag so that I can adjust my order before making a purchase                                  |
+| 13  | As a **site user** I want to sign up for newsletters on the website so that I can keep up with updates and deals                                          |
+| 14  | As a **site user** I want to access the footer of the website, so that I can visit the site's social media pages                                          |
+| 15  | As a **site user** I want to view details about available art classes, so that I can make an informed decision about participating in a class             |
+| 16  | As a **site user** I want to be able to book an art class that I'm interested in, so that I can secure my spot for the class                              |
+| 17  | As a **site user** I want to be able to contact the website administrators easily, so that I can seek assistance, provide feedback, or address any concerns I may have                                                          
+| 18  | As a **site user** I want to be able to delete my profile when needed, so that I can have control over my account information and personal data           |
+
+
+---
+<br/>
 
 ### **Design**
-<br/>
 
 ### **Wireframes**
 
-<details>
+
 <summary>Index</summary>
 
 ![Index Wireframe](docs/index.png)
 
-<details>
+
 <summary>Products</summary>
 
 ![Products Wireframe](docs/products.png)
 
-<details>
+
 <summary>Product Details</summary>
 
 ![Product Details Wireframe](docs/details.png)
 
-<details>
+
 <summary>Art Classes</summary>
 
 ![Art Classes Wireframe](docs/artclasses.png)
 
 
-<details>
 <summary>Contact Us</summary>
 
 ![Contact Us Wireframe](docs/contact.png)
 
-
-
-The UX design for the Bloom Art E-commerce project followed a systematic process to ensure a user-friendly and visually appealing platform. Below are the key stages of the design journey.
-
-### **Wireframes**
-
-The wireframes are mostly adapted versions of the Boutique Ado walkthrough. 
 
 ### **Colour Scheme**
 
@@ -105,11 +123,6 @@ Google Fonts was used to select and import the fonts on this project:
 * [Lato](https://fonts.google.com/?query=lato)
 
  
-### User Stories
-
-The Agile Methodology was used to plan this project. This was implemented through Github and the Project Board, which can be seen here -  <a href="https://github.com/users/ksumm/projects/8"> The Bloom Art </a>
-
-
 ### Database Schema
 
 ![Database schema](docs/database.png)
@@ -207,3 +220,4 @@ If you would like to edit your copy of this repository on Gitpod, you will need 
 - I would like to thank my daughter for her understanding, patience and support while I developed this project.
 
 
+</div>
