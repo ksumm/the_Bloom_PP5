@@ -1,6 +1,4 @@
-<div style="background-color: #F7F7F7; color: black;">
- 
-# **The Bloom Art**
+ <h1 align="center">The Bloom Art</h1>
 
 Welcome to The Bloom Art, a vibrant and user-friendly e-commerce platform specializing in watercolor prints. This project is developed as a part of the Full Stack Development course at Code Institute. 
 
@@ -119,31 +117,35 @@ The Agile Methodology was used to plan this project. This was implemented throug
 
 ### **Wireframes**
 
-
+<details>
 <summary>Index</summary>
 
 ![Index Wireframe](docs/index.png)
+</details>
 
-
+<details>
 <summary>Products</summary>
 
 ![Products Wireframe](docs/products.png)
+</details>
 
-
+<details>
 <summary>Product Details</summary>
 
 ![Product Details Wireframe](docs/details.png)
+</details>
 
-
+<details>
 <summary>Art Classes</summary>
 
 ![Art Classes Wireframe](docs/artclasses.png)
+</details>
 
-
+<details>
 <summary>Contact Us</summary>
 
 ![Contact Us Wireframe](docs/contact.png)
-
+</details>
 
 ### **Colour Scheme**
 
@@ -186,8 +188,11 @@ All images used in the Bloom Art project were taken from [Freepik](https://www.f
 
 - The responsieve navigation bar appears on every page so users can easily navigate through the site
 - Navigation bar has links for 'About Us page', 'Shop All Products', 'Categories', 'Seasonal', 'Holidays and Events', 'Art Classes', Account and Shopping Bag
-  
+
+### **Desktop**
 ![Navbar](docs/navbar.png)
+
+### **Mobile**
 ![Mobile Navbar](docs/mnavbar.png)
 
 
@@ -229,9 +234,21 @@ All images used in the Bloom Art project were taken from [Freepik](https://www.f
 ![Checkout](docs/checkout_success.png)
 
 
+### **My Profile**
+- Provides user to track his orders history
+- The user can save or update their delivery information and delete their profile
+![My Profile](docs/my_profile.png)
+
+
 ### **Art Classes**
 - Displays a visually appealing list of watercolor prints available to book
 ![Art Classes](docs/art_classes.png)
+
+
+### **About Us**
+- The About Us page gives the information about the Bloom Art 
+![About Us](docs/about_us.png)
+
 
 ---
 <br/>
@@ -239,10 +256,11 @@ All images used in the Bloom Art project were taken from [Freepik](https://www.f
 ## **Technologies Used**
 
 ### **Languages Used**
-  - HTML5
-  - CSS3
-  - JavaScript
-  - Python
+
+-   [HTML5](https://en.wikipedia.org/wiki/HTML5)
+-   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+-   [Python](https://www.python.org/)
+-   [jQuery](https://jquery.com/)
 
 ### **Frameworks, Libraries & Programs Used**
 * [Git](https://git-scm.com/) for version control.
@@ -262,6 +280,10 @@ All images used in the Bloom Art project were taken from [Freepik](https://www.f
 * [Google Fonts](https://fonts.google.com/) to import the fonts used on the website.
 * [Bootstrap](https://getbootstrap.com/) for layout.
 * [Lucidchart](https://lucid.app/) for database schema.
+* [Cloudinary](https://cloudinary.com/) used for hosting images
+* [Stripe](https://stripe.com/) to enable secure payment processing capabilities
+* [ElephantSQL](https://www.elephantsql.com/) to host the applications Postgres database
+* [Heroku](https://www.heroku.com/) used to host the deployed back-end site
 
 ---
 <br/>
@@ -277,6 +299,18 @@ Please check the [TESTING.md](TESTING.md) file for all the tests.
 
 ## **Remote Deployment**
 
+### **ElephantSQL**
+
+1. Navigate to ElephantSQL.com and create a user account, by using the log-in with GitHub option.
+2. Click “Create New Instance”.
+3. Set up your plan. (You can leave the 'tags' field blank.)
+4. Select a region.
+5. Select a data centre near you
+6. Then click “Review”.
+7. Check your details are correct and then click “Create instance”.
+8. Return to the ElephantSQL dashboard and click on the database instance name for this project
+9. In the URL section, clicking the copy icon will copy the database URL to your clipboard
+
 Before deploying, run 'pip3 freeze > requirements.txt' on the terminal of your IDE of choice.
 
 The site was deployed to Heroku. The steps to deploy are as follows: 
@@ -288,7 +322,10 @@ The site was deployed to Heroku. The steps to deploy are as follows:
   - Add key DATABASE_URL and add the value of your database on ElephantSQL or other host of choice.
   - Add key CLOUDINARY_URL and add the value of your cloudinary host link.
   - Add key SECRET_KEY and add the value of your choice for this secret key.
-  - Add key DISABLE_COLLECTSTATIC and add the value of 1. (Don't forget to remove this key before the final deployment.)
+  - Add key STRIPE_PUBLIC_KEY and add the value of your choice for this secret key.
+  - Add key STRIPE_SECRET_KEY and add the value of your choice for this secret key.
+  - Add key STRIPE_WH_SECRET and add the value of your choice for this secret key.
+ 
   5. Go to the Deploy tab. Select GitHub as Deployment Method. Connect your account.
   6. Enter the name of the repository that you forked, search and connect.
   7. Select the branch and click Deploy Branch.
@@ -316,6 +353,7 @@ The live link can be found here - [https://github.com/ksumm/the_Bloom_PP5](https
 
 
 ### **Using Gitpod**
+
 If you would like to edit your copy of this repository on Gitpod, you will need to: 
   1. On your browser of choice, install the Gitpod extension/add-on.
   2. On GitHub, open the project repository you forked before.
@@ -327,13 +365,17 @@ If you would like to edit your copy of this repository on Gitpod, you will need 
 <br/>
 
 ## **Credits**
+
+- Boutique Ado project was used as a base in development of this website
+- [This tutorial](https://www.twilio.com/blog/build-contact-form-python-django-twilio-sendgrid) was used to implement the Contact Us page
+
+
 ---
 <br/>
 
 ## **Acknowledgments**
 
 - I would like to thank my Code Institute mentor, Rory Patrick Sheridan for his support and feedback throughout this project.
-- I would like to thank my daughter for her understanding, patience and support while I developed this project.
+- I would like to thank my daughter for her understanding, patience, and support while I developed this project.
+- I would like to thank to Code Institute tutors - Sarah, Gemma, Oisin, Rebecca, John, and Roman. Developing this project I used tutors support a lot. Thanks a million, guys, for your patience, attention, help, and support. 
 
-
-</div>
