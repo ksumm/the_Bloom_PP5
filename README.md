@@ -191,14 +191,47 @@ All images used in the Bloom Art project were taken from [Freepik](https://www.f
 ![Mobile Navbar](docs/mnavbar.png)
 
 
+### **Home Page**
+- has festive art print banner background with call to action "Shop Now" buttton to prompt users to explore the new Chrismas Art Prints collection
+![Home](docs/home.png)
+
+
 ### **Footer**
 - Footer contains The Bloom Art section with About Us and Privasy Policy pages links, Assistanse with Shipping Information and Returns & Exchanges links, Our Contacs with Contact Us and Facebook pages links sections and a Newsletter subscription form. 
 ![Footer](docs/footer.png)
  
 
 ### **Products Page**
+- Displays a visually appealing list of watercolor prints available for purchase
+- Has implemented filters to help users narrow down their search based on categories, raiting and price range
+- Has implemented edit/delete product functionality for Admin users only
+![Products](docs/products1.png)
 
-![Products](docs/products.png)  
+
+### **Product Detail Page**
+- Provides detailed information about each product
+- Includes an "Add to Cart" button, allowing users to easily add items to their shopping cart
+- Includes an "Continue shopping" button, allowing users to easily return to the All Products page
+- Includes an "Increment/Decrement Quantity" button, allowing users to easily increment or decrement the quantity of added product
+![Product Detail](docs/p_details.png)
+
+
+### **Shopping bag**
+- Provides list of added products with product image, price, total and delivery calculation
+- User can update quantiy or remove product from Shopping Bag
+![Shopping Bag](docs/shopping_bag.png)
+
+
+### **Checkout**
+- Provides fields for User address and contact iformation for delivery
+- Secure Stripe payments implemented
+- Confirmation email implemented after successfull checkout
+![Checkout](docs/checkout_success.png)
+
+
+### **Art Classes**
+- Displays a visually appealing list of watercolor prints available to book
+![Art Classes](docs/art_classes.png)
 
 ---
 <br/>
