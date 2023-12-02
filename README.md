@@ -182,8 +182,23 @@ All images used in the Bloom Art project were taken from [Freepik](https://www.f
 
 ## **Features** 
 
-### **Header**
+### **Navigation Bar**
 
+- The responsieve navigation bar appears on every page so users can easily navigate through the site
+- Navigation bar has links for 'About Us page', 'Shop All Products', 'Categories', 'Seasonal', 'Holidays and Events', 'Art Classes', Account and Shopping Bag
+  
+![Navbar](docs/navbar.png)
+![Mobile Navbar](docs/mnavbar.png)
+
+
+### **Footer**
+- Footer contains The Bloom Art section with About Us and Privasy Policy pages links, Assistanse with Shipping Information and Returns & Exchanges links, Our Contacs with Contact Us and Facebook pages links sections and a Newsletter subscription form. 
+![Footer](docs/footer.png)
+ 
+
+### **Products Page**
+
+![Products](docs/products.png)  
 
 ---
 <br/>
