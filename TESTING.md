@@ -127,4 +127,52 @@ Automated testing will be implemented in next release
 | Holidays/Events  | User can see error message if he did not enter any data | Don't enter any data in seach field, press Enter| As expected                      | PASS         |
 | Art Classes      | The Art Classes page is opened.                         | Click on the Art Classes > Our Art Classes.     | As expected                      | PASS         |
 
+`Home Page`
+
+| Feature          | Expected Outcome                                        | Test Performed                                  | Result                           | Test Outcome |
+|------------------|---------------------------------------------------------|-------------------------------------------------|----------------------------------|--------------|
+| Shop Now Button  | Goes to the Christmas Collection page                   | Click on the Shop Now button                    | As expected                      | PASS         |
+
+
+`Footer`
+
+| Feature          | Expected Outcome                                        | Test Performed                                  | Result                           | Test Outcome |
+|------------------|---------------------------------------------------------|-------------------------------------------------|----------------------------------|--------------|
+| About Us         | Goes to the About Us page                               | Click on the About us link                      | As expected                      | PASS         |
+| Privacy Policy   | Goes to the Privacy Policy page                         | Click on the Privacy Policy link                | As expected                      | PASS         |
+| Shipping         | Goes to the Shipping information page                   | Click on the Shipping information link          | As expected                      | PASS         |
+| Returns          | Goes to the Returns and Exchanges page                  | Click on the Returns and Exchanges link         | As expected                      | PASS         |
+| Contact Us       | Goes to the Contact Us information page                 | Click on theContact Us information link         | As expected                      | PASS         |
+| Facebook         | Goes to the Facebook page                               | Click on the Fecebooks link                     | As expected                      | PASS         |
+| Subscribe        | User can subscribe to the newsletters                   | Enter email address. Press Subscribe button     | As expected                      | PASS         |
+| Subscribe        | Thank you message after User has sudscribed             | Enter email address. Press Subscribe button     | As expected                      | PASS         |
+
+
+`Products`
+
+| Feature           | Expected Outcome                                        | Test Performed                                  | Result                           | Test Outcome |
+|-------------------|---------------------------------------------------------|-------------------------------------------------|----------------------------------|--------------|
+| All Products      | User can open All Products page                         | Click on the Shop All Products > All Products   | As expected                      | PASS         |
+| Product Details   | Goes to the Product Details page                        | Click on the Product link                       | As expected                      | PASS         |
+| Increment Quantity| The quantity is incremented by 1                        | Click on the "+" button                         | As expected                      | PASS         |
+| Decrement Quantity| The quantity is decremented by 1                        | Click on the "-" button                         | As expected                      | PASS         |
+| Add To Bag        | The Product is added to bag                             | Click on the Add to Bag button                  | As expected                      | PASS         |
+| Continue Shopping | Goes to the All Products page                           | Click on the Continue Shopping button           | As expected                      | PASS         |
+| Add to Bag        | "Product name" was added to bag message                 | Click on the Add to Bag button                  | As expected                      | PASS         |
+
+
+`Shopping Bag`
+
+
+| Feature           | Expected Outcome                                        | Test Performed                                  | Result                           | Test Outcome |
+|-------------------|---------------------------------------------------------|-------------------------------------------------|----------------------------------|--------------|
+| Added Products    | User can see All Added Products in Shopping Bag         | Open Shopping Bag                               | As expected                      | PASS         |
+| Increment Quantity| The quantity is incremented by 1                        | Click on the "+" button                         | As expected                      | PASS         |
+| Decrement Quantity| The quantity is decremented by 1                        | Click on the "-" button                         | As expected                      | PASS         |
+| Continue Shopping | Goes to the All Products page                           | Click on the Continue Shopping button           | As expected                      | PASS         |
+| Secure Checkout   | Checkout Form is opened                                 | Click on the Add to Secure Checkout             | As expected                      | PASS         |
+
+
+`Checkout`
+
 
