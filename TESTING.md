@@ -72,6 +72,25 @@ Also the Python was checked on CI Python linter:
 ---
 <br>
 
+## **JAVA SCRIPT**
+
+To detect errors and potential problems in our JavaScript code we used: [JSHint](https://jshint.com/)
+
+<details>
+<summary>stripe</summary>
+
+![stripe](docs/testing/stripes.png)
+</details>
+
+<details>
+<summary>countryfield</summary>
+
+![countryfield](docs/testing/countryfield.png)
+</details>
+
+---
+<br>
+
 
 ## **LIGHTHOUSE**
 
@@ -93,10 +112,19 @@ Automated testing will be implemented in next release
 
 `Nav Bar`
 
-| Feature     | Expected Outcome                                        | Test Performed                              | Result                           | Test Outcome |
-|-------------|---------------------------------------------------------|---------------------------------------------|----------------------------------|--------------|
-| Logo        | Goes to home page                                       | Click on the logo on the top left.          | Goes to the home page.           | PASS         |
-| Home        | Goes to home page when user is not logged in            | Click on the Home menu item.                | Goes to the home page.           | PASS         |
-| Login       | Goes to the Login page.                                 | Click on the Login menu item.               | Goes to the login page.          | PASS         |
-| Contact Us  | Goes to the Contact Us page.                            | Click on the Contact Us menu item.          | Goes to the Contact Us menu item.| PASS         |
-| Logout      | Goes to the Confirm Logout page when user is logged in. | Click on the Logout menu item.              | Goes to the Confirm Logout page. | PASS         |
+| Feature          | Expected Outcome                                        | Test Performed                                  | Result                           | Test Outcome |
+|------------------|---------------------------------------------------------|-------------------------------------------------|----------------------------------|--------------|
+| Logo             | Goes to home page .                                     | Click on the logo.                              | As expected                      | PASS         |
+| Register         | Goes to the Signup when user is not logged in.          | Click on the Home menu item.                    | As expected                      | PASS         |
+| Login            | Goes to the Login page.                                 | Click on the Login menu item.                   | As expected                      | PASS         |
+| Shopping bag     | Goes to the Shopping bag page.                          | Click on the Shopping bag  icon.                | As expected                      | PASS         |
+| Logout           | Goes to the Confirm Logout page when user is logged in. | Click on the Logout menu item.                  | As expected                      | PASS         |
+| Search           | User can see search results                             | Enter any word in search field. Press Enter     | As expected                      | PASS         |
+| Search           | User can see error message if he did not enter any data | Don't enter any data in seach field, press Enter| As expected                      | PASS         |
+| About Us         | Goes to the About Us page.                              | Click on the About Us/About us link.            | As expected                      | PASS         |
+| Shop All Products| The drop down list is opened.                           | Click on the Shopp All Products link.           | As expected                      | PASS         |
+| Seasonal         | The drop down list is opened.                           | Click on the Seasonal link.                     | As expected                      | PASS         |
+| Holidays/Events  | User can see error message if he did not enter any data | Don't enter any data in seach field, press Enter| As expected                      | PASS         |
+| Art Classes      | The Art Classes page is opened.                         | Click on the Art Classes > Our Art Classes.     | As expected                      | PASS         |
+
+
