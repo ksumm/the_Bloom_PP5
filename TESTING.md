@@ -202,16 +202,16 @@ Automated testing will be implemented in next release
 
 `Art Classes`
 
-| Feature             | Expected Outcome                                        | Test Performed                                  | Result                           | Test Outcome |
-|-------------------- |---------------------------------------------------------|-------------------------------------------------|----------------------------------|--------------|
-| Art Classes list    | User can see all Aft Classes                            | Click on the Art Classes > Our Art Classes      | As expected                      | PASS         |
-| Art Class Detail    | User can see all Aft Class details page                 | Click on the "More Info" button                 | As expected                      | PASS         |
-| Book Art Class      | Book Art Class form is opened                           | Art Class > press "Book now" button             | As expected                      | PASS         |
-| Book Art Class Form | User can submit the Book Art Class form                 | Fill all the requiered fields > Book Now        | As expected                      | PASS         |
-| Submit form         | User can submit the checkout form                       | Fill all the requiered fields > Complete Order  | As expected                      | PASS         |
-| Success Message     | Success page is shown after User submitted Booking form | Submit Boking form                              | As expected                      | PASS         |
-| Back to Home page   | Goes to home page                                       | Submit Boking form > Press Back to Home page    | As expected                      | PASS         |
-
+| Feature                       | Expected Outcome                                        | Test Performed                                  | Result                           | Test Outcome |
+|-------------------------------|---------------------------------------------------------|-------------------------------------------------|----------------------------------|--------------|
+| Art Classes list              | User can see all Aft Classes                            | Click on the Art Classes > Our Art Classes      | As expected                      | PASS         |
+| Art Class Detail              | User can see all Aft Class details page                 | Click on the "More Info" button                 | As expected                      | PASS         |
+| Book Art Class                | Book Art Class form is opened                           | Art Class > press "Book now" button             | As expected                      | PASS         |
+| Book Art Class Form           | User can submit the Book Art Class form                 | Fill all the requiered fields > Book Now        | As expected                      | PASS         |
+| Submit form                   | User can submit the checkout form                       | Fill all the requiered fields > Complete Order  | As expected                      | PASS         |
+| Success Message               | Success page is shown after User submitted Booking form | Submit Boking form                              | As expected                      | PASS         |
+| Back to Home page             | Goes to home page                                       | Submit Boking form > Press Back to Home page    | As expected                      | PASS         |
+| Site Guest > Book Art Class   | Login page is opened                                    | Not logged in submit Boking form                | As expected                      | PASS         |
 
 
 
