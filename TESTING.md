@@ -79,7 +79,7 @@ To detect errors and potential problems in our JavaScript code we used: [JSHint]
 <details>
 <summary>stripe</summary>
 
-![stripe](docs/testing/stripes.png)
+![stripe](docs/testing/stripe.png)
 </details>
 
 <details>
@@ -217,4 +217,4 @@ Automated testing will be implemented in next release
 
 ## **BUGS FIXED**
 
-* server error 500 on deployed site after Site Guest booked the Art Class - ![commit 0533323b2b8d2e52a95ada912e39e93d738e127a](https://github.com/ksumm/the_Bloom_PP5/commit/0533323b2b8d2e52a95ada912e39e93d738e127a)
+* server error 500 on deployed site after Site Guest booked the Art Class - [commit 0533323b2b8d2e52a95ada912e39e93d738e127a](https://github.com/ksumm/the_Bloom_PP5/commit/0533323b2b8d2e52a95ada912e39e93d738e127a)
