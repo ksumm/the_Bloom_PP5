@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponseRedirect
+from django.contrib.auth.decorators import login_required
 from django.urls import reverse
 from .models import ArtClass
 from .forms import ArtClassBookingForm
@@ -20,6 +21,7 @@ def art_class_detail(request, art_class_id):
     return render(request, 'artclass/art_class_detail.html', {'art_class': art_class})  # noqa
 
 
+@login_required
 def book_art_class(request, art_class_id):
     art_class = get_object_or_404(ArtClass, pk=art_class_id)
 
