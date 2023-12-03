@@ -12,12 +12,12 @@ def art_class_list(request):
     for art_class in artclasses:
         print(art_class.title)
 
-    return render(request, 'artclass/art_class_list.html', {'artclasses': artclasses}) # noqa
+    return render(request, 'artclass/art_class_list.html', {'artclasses': artclasses})  # noqa
 
 
 def art_class_detail(request, art_class_id):
     art_class = get_object_or_404(ArtClass, pk=art_class_id)
-    return render(request, 'artclass/art_class_detail.html', {'art_class': art_class}) # noqa
+    return render(request, 'artclass/art_class_detail.html', {'art_class': art_class})  # noqa
 
 
 def book_art_class(request, art_class_id):
@@ -40,7 +40,7 @@ def book_art_class(request, art_class_id):
     else:
         form = ArtClassBookingForm()
 
-    return render(request, 'artclass/book_art_class.html', {'art_class': art_class, 'form': form}) # noqa
+    return render(request, 'artclass/book_art_class.html', {'art_class': art_class, 'form': form})  # noqa
 
 
 def success_view(request):
